@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/txtTitle"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Welcome to my greetings application"
+       android:gravity="center"
+       android:textSize="25dp"
+       android:typeface="serif"
+       />
+    
+    
+    <EditText
+        android:id="@+id/txtEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:hint="Enter your name"
+        android:autofillHints="name" />
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Click Me"/>
+
+</RelativeLayout>
